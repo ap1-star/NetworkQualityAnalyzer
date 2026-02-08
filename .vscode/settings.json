@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.commandsToSkipShell": [
+        "{\"editor.inlineSuggest.enabled\": false}"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
+}

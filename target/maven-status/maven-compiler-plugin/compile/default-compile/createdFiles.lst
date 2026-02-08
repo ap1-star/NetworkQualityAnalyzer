@@ -1,0 +1,5 @@
+com\example\networkqualityanalyzer\PingResult.class
+com\example\networkqualityanalyzer\RestController.class
+com\example\networkqualityanalyzer\NetworkQualityAnalyzerApplication.class
+com\example\networkqualityanalyzer\PingController.class
+com\example\networkqualityanalyzer\PingService.class

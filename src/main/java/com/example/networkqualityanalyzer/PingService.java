@@ -3,7 +3,6 @@ package com.example.networkqualityanalyzer;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import java.net.InetAddress;
 import java.time.LocalDateTime;
 
 @Service
@@ -15,11 +14,24 @@ public class PingService {
     @Scheduled(fixedRate = 10000)
     public void pingGoogle() {
         try {
-            InetAddress address = InetAddress.getByName("google.com");
+            String host = "https://google.com";
 
-            long start = System.nanoTime();
-            boolean reachable = address.isReachable(5000);
-            long end = System.nanoTime();
+long start = System.nanoTime();
+
+java.net.URL url = new java.net.URL(host);
+java.net.HttpURLConnection connection =
+        (java.net.HttpURLConnection) url.openConnection();
+
+connection.setConnectTimeout(5000);
+connection.setReadTimeout(5000);
+connection.setRequestMethod("GET");
+
+int responseCode = connection.getResponseCode();
+
+long end = System.nanoTime();
+
+boolean reachable = (responseCode >= 200 && responseCode < 500);
+
 
             if (reachable) {
                 long latencyMs = (end - start) / 1_000_000;

@@ -1,0 +1,40 @@
+name: Refresh official recruitment feed
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+  push:
+    branches: [master]
+    paths:
+      - 'ece-recruitment-radar/data/sources.json'
+      - 'ece-recruitment-radar/scrape_official_sources.py'
+      - 'ece-recruitment-radar/.github/workflows/refresh-recruitment-feed.yml'
+permissions:
+  contents: write
+concurrency:
+  group: ece-recruitment-feed
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r ece-recruitment-radar/requirements.txt
+      - name: Crawl public official recruitment pages
+        run: python ece-recruitment-radar/scrape_official_sources.py
+      - name: Commit the updated feed
+        run: |
+          git config user.name 'Recruitment Radar Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add ece-recruitment-radar/data/live-notices.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh ECE recruitment feed"
+            git push
+          else
+            echo "No feed changes to commit."
+          fi

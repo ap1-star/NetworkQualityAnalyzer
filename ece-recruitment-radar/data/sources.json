@@ -107,7 +107,7 @@
   {
     "id": "barc",
     "name": "BARC Careers",
-    "url": "https://www.barc.gov.in/careers.html",
+    "url": "https://www.barcocesexam.in/",
     "category": "Research / Technical",
     "notes": "OCES/DGFS and scientific recruitment"
   },
@@ -128,7 +128,7 @@
   {
     "id": "gate",
     "name": "GATE 2027 Official Portal",
-    "url": "https://gate2027.iitr.ac.in/",
+    "url": "https://gate2027.iitm.ac.in/important_dates",
     "category": "Central exam",
     "notes": "GATE EC exam details and score schedule"
   },
@@ -359,14 +359,14 @@
   {
     "id": "gail",
     "name": "GAIL Careers",
-    "url": "https://gailonline.com/CRApplyingGAIL.html",
+    "url": "https://www.gailonline.com/Vacancies.html",
     "category": "PSU",
     "notes": "Executive and technical posts"
   },
   {
     "id": "nalco",
     "name": "NALCO Careers",
-    "url": "https://nalcoindia.com/careers/",
+    "url": "https://nalcoindia.com/career/careers/",
     "category": "PSU",
     "notes": "Graduate engineer and technical hiring"
   },
@@ -380,7 +380,7 @@
   {
     "id": "grse",
     "name": "Garden Reach Shipbuilders Careers",
-    "url": "https://www.grse.in/job.html",
+    "url": "https://www.grse.in/career/",
     "category": "PSU",
     "notes": "Technical and apprentice roles"
   },

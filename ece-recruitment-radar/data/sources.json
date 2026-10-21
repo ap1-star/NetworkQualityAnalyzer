@@ -1,0 +1,415 @@
+[
+  {
+    "id": "powergrid",
+    "name": "POWERGRID Job Opportunities",
+    "url": "https://www.powergrid.in/en/job-opportunities",
+    "category": "PSU",
+    "notes": "GATE Engineer Trainee and other hiring"
+  },
+  {
+    "id": "bel",
+    "name": "BEL Job Notifications",
+    "url": "https://bel-india.in/job-notifications/",
+    "category": "PSU",
+    "notes": "Probationary Engineer, trainee and project roles"
+  },
+  {
+    "id": "ecil",
+    "name": "ECIL Jobs",
+    "url": "https://www.ecil.co.in/jobs.html",
+    "category": "PSU",
+    "notes": "GET and technical roles"
+  },
+  {
+    "id": "npcil",
+    "name": "NPCIL Careers",
+    "url": "https://www.npcilcareers.co.in/",
+    "category": "PSU",
+    "notes": "Executive and technical recruitment"
+  },
+  {
+    "id": "ongc",
+    "name": "ONGC Recruitment",
+    "url": "https://ongcindia.com/web/eng/career/recruitment-notice",
+    "category": "PSU",
+    "notes": "Graduate trainee and technical openings"
+  },
+  {
+    "id": "ntpc",
+    "name": "NTPC Careers",
+    "url": "https://careers.ntpc.co.in/",
+    "category": "PSU",
+    "notes": "Engineering and trainee recruitment"
+  },
+  {
+    "id": "iocl",
+    "name": "IOCL Latest Job Openings",
+    "url": "https://iocl.com/latest-job-opening",
+    "category": "PSU",
+    "notes": "Engineering and non-GATE roles"
+  },
+  {
+    "id": "nhpc",
+    "name": "NHPC Careers",
+    "url": "https://www.nhpcindia.com/",
+    "category": "PSU",
+    "notes": "Trainee and technical recruitment; check careers section"
+  },
+  {
+    "id": "sail",
+    "name": "SAIL Careers",
+    "url": "https://www.sail.co.in/en/careers",
+    "category": "PSU",
+    "notes": "Management trainee and technical jobs"
+  },
+  {
+    "id": "bhel",
+    "name": "BHEL Careers",
+    "url": "https://careers.bhel.in/",
+    "category": "PSU",
+    "notes": "Engineer trainee and technical hiring"
+  },
+  {
+    "id": "hal",
+    "name": "HAL Careers",
+    "url": "https://hal-india.co.in/Career",
+    "category": "PSU",
+    "notes": "Engineer and technician opportunities"
+  },
+  {
+    "id": "isro-careers",
+    "name": "ISRO Careers",
+    "url": "https://www.isro.gov.in/Careers.html",
+    "category": "Space / Defence",
+    "notes": "Scientist/Engineer and centre-wise vacancies"
+  },
+  {
+    "id": "isro-current",
+    "name": "ISRO Current Opportunities",
+    "url": "https://www.isro.gov.in/ISRO_EN/CurrentOpportunities.html",
+    "category": "Space / Defence",
+    "notes": "Current notices"
+  },
+  {
+    "id": "drdo-rac",
+    "name": "DRDO RAC Scientist Recruitment",
+    "url": "https://rac.gov.in/",
+    "category": "Space / Defence",
+    "notes": "Scientist B and research recruitment"
+  },
+  {
+    "id": "drdo",
+    "name": "DRDO Careers / CEPTAM",
+    "url": "https://www.drdo.gov.in/",
+    "category": "Space / Defence",
+    "notes": "Check Careers / What's New sections"
+  },
+  {
+    "id": "barc",
+    "name": "BARC Careers",
+    "url": "https://www.barc.gov.in/careers.html",
+    "category": "Research / Technical",
+    "notes": "OCES/DGFS and scientific recruitment"
+  },
+  {
+    "id": "upsc-exams",
+    "name": "UPSC Examination Notifications",
+    "url": "https://www.upsc.gov.in/exams-related-info/exam-notification/archives",
+    "category": "Central exam",
+    "notes": "Engineering Services and central examinations"
+  },
+  {
+    "id": "ssc",
+    "name": "Staff Selection Commission",
+    "url": "https://ssc.gov.in/",
+    "category": "Central exam",
+    "notes": "SSC JE and other examinations"
+  },
+  {
+    "id": "gate",
+    "name": "GATE 2027 Official Portal",
+    "url": "https://gate2027.iitr.ac.in/",
+    "category": "Central exam",
+    "notes": "GATE EC exam details and score schedule"
+  },
+  {
+    "id": "rrb-bhopal",
+    "name": "RRB Bhopal",
+    "url": "https://rrbbhopal.gov.in/",
+    "category": "Railways",
+    "notes": "Regional CEN and recruitment updates"
+  },
+  {
+    "id": "rrb-ahmedabad",
+    "name": "RRB Ahmedabad",
+    "url": "https://rrbahmedabad.gov.in/",
+    "category": "Railways",
+    "notes": "Regional railway recruitment"
+  },
+  {
+    "id": "rrb-chennai",
+    "name": "RRB Chennai",
+    "url": "https://www.rrbchennai.gov.in/",
+    "category": "Railways",
+    "notes": "Regional railway recruitment"
+  },
+  {
+    "id": "rrb-mumbai",
+    "name": "RRB Mumbai",
+    "url": "https://rrbmumbai.gov.in/",
+    "category": "Railways",
+    "notes": "Regional railway recruitment"
+  },
+  {
+    "id": "rrb-kolkata",
+    "name": "RRB Kolkata",
+    "url": "https://www.rrbkolkata.gov.in/",
+    "category": "Railways",
+    "notes": "Regional railway recruitment"
+  },
+  {
+    "id": "mppsc",
+    "name": "MPPSC",
+    "url": "https://mppsc.mp.gov.in/",
+    "category": "State",
+    "notes": "Madhya Pradesh state recruitment"
+  },
+  {
+    "id": "mpesb",
+    "name": "MP Employees Selection Board",
+    "url": "https://esb.mp.gov.in/",
+    "category": "State",
+    "notes": "Madhya Pradesh state exams"
+  },
+  {
+    "id": "mppgcl",
+    "name": "MP Power Generating Company",
+    "url": "https://mppgcl.mp.gov.in/",
+    "category": "State",
+    "notes": "State power technical hiring; check career notices"
+  },
+  {
+    "id": "mptransco",
+    "name": "MP Power Transmission Company",
+    "url": "https://www.mptransco.in/",
+    "category": "State",
+    "notes": "Transmission and technical vacancies"
+  },
+  {
+    "id": "aai",
+    "name": "Airports Authority of India Careers",
+    "url": "https://www.aai.aero/en/careers/recruitment",
+    "category": "PSU",
+    "notes": "Junior Executive and technical roles"
+  },
+  {
+    "id": "dfccil",
+    "name": "DFCCIL Careers",
+    "url": "https://dfccil.com/",
+    "category": "PSU",
+    "notes": "Executive and junior executive recruitment"
+  },
+  {
+    "id": "nielit",
+    "name": "NIELIT Recruitment",
+    "url": "https://www.nielit.gov.in/",
+    "category": "Research / Technical",
+    "notes": "Technical and scientific posts"
+  },
+  {
+    "id": "cdac",
+    "name": "C-DAC Careers",
+    "url": "https://www.cdac.in/index.aspx?id=Career",
+    "category": "Research / Technical",
+    "notes": "Project engineer and technical roles"
+  },
+  {
+    "id": "uppsc",
+    "name": "UPPSC",
+    "url": "https://uppsc.up.nic.in/",
+    "category": "State",
+    "notes": "Uttar Pradesh state recruitment"
+  },
+  {
+    "id": "bpsc",
+    "name": "BPSC",
+    "url": "https://bpsc.bihar.gov.in/",
+    "category": "State",
+    "notes": "Bihar state recruitment"
+  },
+  {
+    "id": "rpsc",
+    "name": "RPSC",
+    "url": "https://rpsc.rajasthan.gov.in/",
+    "category": "State",
+    "notes": "Rajasthan state recruitment"
+  },
+  {
+    "id": "gpsc",
+    "name": "GPSC",
+    "url": "https://gpsc.gujarat.gov.in/",
+    "category": "State",
+    "notes": "Gujarat state recruitment"
+  },
+  {
+    "id": "mpsc-maha",
+    "name": "Maharashtra PSC",
+    "url": "https://mpsc.gov.in/",
+    "category": "State",
+    "notes": "Maharashtra state recruitment"
+  },
+  {
+    "id": "tnpsc",
+    "name": "TNPSC",
+    "url": "https://www.tnpsc.gov.in/",
+    "category": "State",
+    "notes": "Tamil Nadu state recruitment"
+  },
+  {
+    "id": "kerala-psc",
+    "name": "Kerala PSC",
+    "url": "https://www.keralapsc.gov.in/",
+    "category": "State",
+    "notes": "Kerala state recruitment"
+  },
+  {
+    "id": "appsc",
+    "name": "APPSC",
+    "url": "https://psc.ap.gov.in/",
+    "category": "State",
+    "notes": "Andhra Pradesh state recruitment"
+  },
+  {
+    "id": "kpsc",
+    "name": "Karnataka PSC",
+    "url": "https://www.kpsc.kar.nic.in/",
+    "category": "State",
+    "notes": "Karnataka state recruitment"
+  },
+  {
+    "id": "hpsc",
+    "name": "HPSC",
+    "url": "https://hpsc.gov.in/",
+    "category": "State",
+    "notes": "Haryana state recruitment"
+  },
+  {
+    "id": "hppsc",
+    "name": "HPPSC",
+    "url": "https://hppsc.hp.gov.in/hppsc/",
+    "category": "State",
+    "notes": "Himachal Pradesh state recruitment"
+  },
+  {
+    "id": "ukpsc",
+    "name": "UKPSC",
+    "url": "https://psc.uk.gov.in/",
+    "category": "State",
+    "notes": "Uttarakhand state recruitment"
+  },
+  {
+    "id": "opsc",
+    "name": "OPSC",
+    "url": "https://www.opsc.gov.in/",
+    "category": "State",
+    "notes": "Odisha state recruitment"
+  },
+  {
+    "id": "wbpsc",
+    "name": "WBPSC",
+    "url": "https://psc.wb.gov.in/",
+    "category": "State",
+    "notes": "West Bengal state recruitment"
+  },
+  {
+    "id": "cgpsc",
+    "name": "CGPSC",
+    "url": "https://psc.cg.gov.in/",
+    "category": "State",
+    "notes": "Chhattisgarh state recruitment"
+  },
+  {
+    "id": "jpsc",
+    "name": "JPSC",
+    "url": "https://www.jpsc.gov.in/",
+    "category": "State",
+    "notes": "Jharkhand state recruitment"
+  },
+  {
+    "id": "apsc",
+    "name": "APSC",
+    "url": "https://apsc.nic.in/",
+    "category": "State",
+    "notes": "Assam state recruitment"
+  },
+  {
+    "id": "ppsc",
+    "name": "PPSC",
+    "url": "https://ppsc.gov.in/",
+    "category": "State",
+    "notes": "Punjab state recruitment"
+  },
+  {
+    "id": "coalindia",
+    "name": "Coal India Careers",
+    "url": "https://www.coalindia.in/career-cil/",
+    "category": "PSU",
+    "notes": "Management trainee and technical recruitment"
+  },
+  {
+    "id": "gail",
+    "name": "GAIL Careers",
+    "url": "https://gailonline.com/CRApplyingGAIL.html",
+    "category": "PSU",
+    "notes": "Executive and technical posts"
+  },
+  {
+    "id": "nalco",
+    "name": "NALCO Careers",
+    "url": "https://nalcoindia.com/careers/",
+    "category": "PSU",
+    "notes": "Graduate engineer and technical hiring"
+  },
+  {
+    "id": "beml",
+    "name": "BEML Careers",
+    "url": "https://www.bemlindia.in/careers/",
+    "category": "PSU",
+    "notes": "Engineering and technical recruitment"
+  },
+  {
+    "id": "grse",
+    "name": "Garden Reach Shipbuilders Careers",
+    "url": "https://www.grse.in/job.html",
+    "category": "PSU",
+    "notes": "Technical and apprentice roles"
+  },
+  {
+    "id": "mazagondock",
+    "name": "Mazagon Dock Careers",
+    "url": "https://mazagondock.in/career.aspx",
+    "category": "PSU",
+    "notes": "Technical and graduate apprentice roles"
+  },
+  {
+    "id": "cochinshipyard",
+    "name": "Cochin Shipyard Careers",
+    "url": "https://cochinshipyard.in/career/career_locations",
+    "category": "PSU",
+    "notes": "Technical recruitment and apprenticeships"
+  },
+  {
+    "id": "rites",
+    "name": "RITES Careers",
+    "url": "https://rites.com/Recruitment",
+    "category": "PSU",
+    "notes": "Engineering / technical recruitment"
+  },
+  {
+    "id": "rrb-all",
+    "name": "RRB Centralised Employment Notices",
+    "url": "https://www.rrbcdg.gov.in/",
+    "category": "Railways",
+    "notes": "Centralised railway recruitment notices and links"
+  }
+]

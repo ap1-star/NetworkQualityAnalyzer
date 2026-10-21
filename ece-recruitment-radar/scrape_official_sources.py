@@ -43,7 +43,7 @@ def extract(html, base, source):
         if not RELEVANT.search(hay): continue
         seen.add(url.rstrip("/"))
         dt = DATE_RE.search(hay)
-        found.append({"id":make_id(url),"title":title[:240],"url":url,"source_id":source["id"],"source_name":source["name"],"category":source["category"],"snippet":context,"date_text":dt.group(0) if dt else None,"first_seen":None,"last_seen":None,"is_new":False,"relevance":"high" if HIGH.search(title) else "normal","route_hint":"GATE mentioned; verify notice" if re.search(r"\\bGATE\\b",hay,re.I) else "Route not inferred; verify notice","verification":"Unverified link discovery"})
+        found.append({"id":make_id(url),"title":title[:240],"url":url,"source_id":source["id"],"source_name":source["name"],"category":source["category"],"snippet":context,"date_text":dt.group(0) if dt else None,"first_seen":None,"last_seen":None,"is_new":False,"relevance":"high" if HIGH.search(title) else "normal","route_hint":"GATE mentioned; verify notice" if re.search(r"\bGATE\b",hay,re.I) else "Route not inferred; verify notice","verification":"Unverified link discovery"})
     found.sort(key=lambda n:(n["relevance"]=="high",bool(n["date_text"]),len(n["title"])),reverse=True)
     return found[:MAX_LINKS_PER_SOURCE]
 

@@ -34,7 +34,11 @@ jobs:
           git add ece-recruitment-radar/data/live-notices.json
           if ! git diff --cached --quiet; then
             git commit -m "Refresh ECE recruitment feed"
-            git push
+            # Other repository updates can land during a 59-site crawl.
+            # Rebase on the latest default branch before publishing the feed.
+            git fetch origin master
+            git rebase origin/master
+            git push origin HEAD:master
           else
             echo "No feed changes to commit."
           fi

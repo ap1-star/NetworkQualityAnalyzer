@@ -5,13 +5,16 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urldefrag, urlparse
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 USER_AGENT = "ECE-Recruitment-Radar/1.0 (public official-notice discovery)"
-TIMEOUT = (5, 10)
-MAX_BYTES = 2_000_000
+TIMEOUT = (10, 18)
+MAX_BYTES = 2_500_000
+MAX_RETRIES = 2
 MAX_LINKS_PER_SOURCE = 40
 RELEVANT = re.compile(r"recruit|career|vacanc|advertisement|notification|job opening|job opportunity|engineer trainee|graduate engineer|scientist|technical officer|technician|apprentice|executive trainee|junior engineer|assistant engineer|rrb|ssc je|engineering services|gate 2027|gate score|application form|apply online|corrigendum|addendum|admit card|call letter|exam date|answer key|result|shortlist|document verification|skill test|cbt|employment notice|walk.?in|project engineer|probationary engineer|management trainee|latest.?job|current opportunities|what.?s new|recruitment notice", re.I)
 HIGH = re.compile(r"recruit|vacanc|advertisement|notification|engineer trainee|graduate engineer|scientist|technical officer|technician|apprentice|executive trainee|junior engineer|application form|apply online|employment notice|probationary engineer|project engineer|job opening|job opportunity", re.I)
@@ -54,7 +57,24 @@ def main():
     old_by = {n.get("id"):n for n in old_items if n.get("id")}
     initial = not bool(old.get("generated_at"))
     session = requests.Session()
-    session.headers.update({"User-Agent":USER_AGENT,"Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.7"})
+    retry = Retry(
+        total=MAX_RETRIES,
+        connect=MAX_RETRIES,
+        read=1,
+        status=1,
+        backoff_factor=0.35,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=frozenset(["GET"]),
+        raise_on_status=False,
+    )
+    adapter = HTTPAdapter(max_retries=retry, pool_connections=12, pool_maxsize=12)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    session.headers.update({
+        "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.7",
+        "Cache-Control": "no-cache",
+    })
     notices, results, errors = [], [], []
     for i, src in enumerate(sources):
         health = {"id":src["id"],"name":src["name"],"url":src["url"],"category":src["category"],"checked_at":now(),"ok":False,"status_code":None,"found_links":0,"error":None}
@@ -81,6 +101,7 @@ def main():
                 notices.append(n)
         except Exception as exc:
             health["error"] = str(exc)[:260]
+            health["error_type"] = type(exc).__name__
             errors.append({"source_id":src["id"],"source_name":src["name"],"url":src["url"],"error":health["error"]})
             for old_n in old_items:
                 if old_n.get("source_id")==src["id"]:
